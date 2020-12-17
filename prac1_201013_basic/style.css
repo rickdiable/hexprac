@@ -1,0 +1,333 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+
+* {
+	font-family: 'SF Pro Text', 'PingFang TC';
+}
+
+
+
+
+.wrap {
+	width: 1200px;
+	margin: 0 auto;
+	padding-top: 40px;
+}
+
+header h1 {
+	font-size: 80px;
+	line-height: 95px;
+	border-bottom: 2px solid #000;
+	padding-top: 40px;
+	padding-bottom: 24px;
+}
+
+.selfie {
+	margin: 48px 0;
+}
+
+.text {
+	font-size: 32px;
+	line-height: 48px;
+	padding-bottom: 8px;
+	margin-bottom: 16px;
+	border-bottom: 1px solid #000;
+	font-weight: bold;
+}
+
+.eng {
+	font-size: 24px;
+	line-height: 29px;
+	color: #A00404;
+	padding-left: 16px;
+}
+
+section p {
+	font-size: 24px;
+	line-height: 36px;
+	margin-bottom: 24px;
+}
+
+.skill {
+	background: #415165;
+	color: #FFFFFF;
+	margin-bottom: 72px;
+	padding-bottom: 50px;
+}
+
+.skill .wrap2 {
+	text-align: center;
+	width: 996px;
+	margin: 0 auto;
+}
+
+.skill .divider {
+	/* border-bottom: 1px solid #ffffff; */
+	height: 1px;
+	background-color: #ffffff;
+	margin-bottom: 48px;
+}
+
+.skill-text {
+	font-size: 32px;
+	line-height: 45px;
+	margin-bottom: 8px;
+	padding-top: 24px;
+}
+
+.skill-eng,
+.footer span {
+	font-size: 24px;
+	line-height: 29px;
+	color: white;
+	padding-left: 16px;
+}
+
+.skill ul {
+	margin: 0 auto;
+	border-left: 2px solid #fff;
+	/* width: 250px; */
+	width: max-content;
+	text-align: left;
+}
+
+.skill li {
+	font-size: 24px;
+	line-height: 36px;
+	margin-bottom: 20px;
+	margin-left: 16px;
+}
+
+.experience {
+	margin-bottom: 76px;
+}
+
+.exp-content p {
+	margin-bottom: 32px;
+}
+
+.mb8.mb8 {
+	margin-bottom: 8px;
+}
+
+.bold {
+	font-weight: 700;
+}
+
+.fz20.fz20 {
+	font-size: 20px;
+	line-height: 30px;
+}
+
+.icon-hexschool {
+	width: 89.5px;
+	height: 66.85px;
+}
+
+.icon-tree {
+	width: 72px;
+	height: 73px;
+}
+
+
+
+
+
+
+.footer {
+	background-color: #415165;
+}
+
+.footer .wrap {
+	text-align: center;
+	padding-top: 24px;
+	padding-bottom: 48px;
+}
+
+.footer h3 {
+	font-size: 32px;
+	line-height: 45px;
+	color: #fff;
+	margin-bottom: 8px;
+}
+
+.divider2 {
+	border-bottom: 1px solid #fff;
+	margin-bottom: 32px;
+}
+
+.footer li {
+	font-size: 24px;
+	line-height: 36px;
+	margin-bottom: 16px;
+	color: white;
+}
+
+.mb20 {
+	margin-bottom: 20px;
+}
+
+.footer li a {
+	color: white;
+}
+
+.footer li a:hover {
+	color: blue;
+}
+
+.footer img {
+	margin-right: 24px;
+}
+
+.footer img:hover {
+	width: 60px;
+	height: 60px;
+}
+
+.icons {
+	height: 60px;
+}
+
+.mb72 {
+	margin-bottom: 72px;
+}

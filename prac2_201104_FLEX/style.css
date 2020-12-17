@@ -1,0 +1,388 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul,
+ul li {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* each settings */
+
+.banner {
+    height: 958px;
+    background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week2/banner.png?raw=true) no-repeat center;
+    background-size: cover;
+    border: 1px solid #707070;
+}
+
+.bannertext {
+    width: 304px;
+    height: 958px;
+}
+
+.bannertext p {
+    width: 283px;
+}
+
+h1 {
+    font-size: 80px;
+    line-height: 94px;
+    font-family: "ROBOTO", "black italic";
+
+}
+
+h2 {
+    font-size: 64px;
+    line-height: 75px;
+}
+
+.icon-group li {
+    width: 60px;
+    height: 60px;
+    margin-right: 16px;
+}
+
+.icon-group img:hover {
+    transition: all 0.5s;
+    transform: scale(1.2);
+    /* display: inline-block; */
+}
+
+.profile {
+    width: 412px;
+    margin: 0 auto;
+}
+
+.brand {
+    background-color: #000;
+    padding-top: 64px;
+    padding-bottom: 160px;
+}
+
+.pic-group {
+    width: 1200px;
+    flex-wrap: wrap;
+}
+
+.pic-group h4 {
+    font-size: 20px;
+    line-height: 42px;
+}
+
+.pic-group li {
+    font-size: 20px;
+    line-height: 42px;
+    text-align: center;
+    margin-bottom: 56px;
+    font-weight: 700;
+}
+
+footer {
+    padding-top: 64px;
+}
+
+footer p {
+    font-size: 24px;
+    line-height: 36px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    transition: all 1s;
+    color: red;
+    display: inline-block;
+    transform: scale(1.1) translateX(5%) translateY(-5%);
+    border-bottom: 0.5px solid red;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.underline {
+    padding-bottom: 24px;
+    border-bottom: 1px solid #000;
+}
+
+.red-dot:before {
+    content: "";
+    display: inline-block;
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    background-color: #891818;
+    margin-right: 16px;
+}
+
+
+
+.mb1 {
+    margin-bottom: 8px;
+}
+
+.mb2 {
+    margin-bottom: 16px;
+}
+
+.mb3 {
+    margin-bottom: 24px;
+}
+
+.mb4 {
+    margin-bottom: 32px;
+}
+
+.mb5 {
+    margin-bottom: 40px;
+}
+
+.mb6 {
+    margin-bottom: 48px;
+}
+
+.mb7 {
+    margin-bottom: 56px;
+}
+
+.mb8 {
+    margin-bottom: 64px;
+}
+
+.mb-68 {
+    margin-bottom: 68px;
+}
+
+.mb20 {
+    margin-bottom: 160px;
+}
+
+.fz20 {
+    font-size: 20px;
+}
+
+.fz24 {
+    font-size: 24px;
+}
+
+.lh-1 {
+    line-height: 1.5;
+}
+
+.lh-2 {
+    line-height: 1.75;
+}
+
+.lh-3 {
+    line-height: 2;
+}
+
+.color-white {
+    color: #ffffff;
+}
+
+.bgc-black {
+    background-color: #000000;
+}
+
+.bolder {
+    font-weight: bolder;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.ta-left {
+    text-align: left;
+}
+
+.initial {
+    list-style: initial;
+}
+
+h3 {
+    font-size: 64px;
+    line-height: 75px;
+}
+
+h4 {
+    font-size: 20px;
+    line-height: 42px;
+}
+
+h1 span {
+    font-size: 24px;
+    line-height: 42px;
+}
+
+
+/* flex */
+
+.d-flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.d-flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-jc-start {
+    justify-content: flex-start;
+}
+
+.flex-jc-center {
+    justify-content: center;
+}
+
+.w1200 {
+    width: 1200px;
+}
+
+.flex-ai-start {
+    align-items: flex-start;
+}
+
+.flex-ai-center {
+    align-items: center;
+}
+
+.flex-jc-space-between {
+    justify-content: space-between;
+}
