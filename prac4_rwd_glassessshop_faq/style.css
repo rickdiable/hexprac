@@ -1,0 +1,955 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    color: #fff;
+}
+
+html {
+    font-size: 16px;
+}
+
+/* reset end */
+.ta-right {
+    text-align: right;
+}
+
+.h1 {
+    font-size: 4rem;
+}
+
+.h2 {
+    font-size: 3rem;
+}
+
+.h3 {
+    font-size: 2.25rem;
+}
+
+.h4 {
+    font-size: 2rem;
+}
+
+.h5 {
+    font-size: 1.5rem;
+}
+
+.h6 {
+    font-size: 1.25rem;
+}
+
+.lh-1 {
+    line-height: 1.5;
+}
+
+.lh-2 {
+    line-height: 1.75;
+}
+
+.lh-3 {
+    line-height: 2;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+/* flex */
+
+.d-flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.d-flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-jc-start {
+    justify-content: flex-start;
+}
+
+.flex-ai-end {
+    align-items: flex-end;
+}
+
+.flex-jc-center {
+    justify-content: center;
+}
+
+.flex-ai-start {
+    align-items: flex-start;
+}
+
+.flex-ai-center {
+    align-items: center;
+}
+
+.flex-jc-space-between {
+    justify-content: space-between;
+}
+
+.d-flex-row-reverse {
+    flex-direction: row-reverse;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.4;
+    color: #650300;
+    font-weight: bold;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+
+/* each settings */
+
+.navbar {
+    background-color: #AA0601;
+    padding: 30px 88px;
+}
+
+.logo {
+    background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/logo.png?raw=true);
+    background-size: contain;
+    width: 80px;
+    height: 48.57px;
+    display: block;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.logo:hover {
+    transition: 0.8s;
+    transform: translateY(-6px);
+}
+
+.navbar-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: 'Noto Sans';
+    position: relative;
+    padding: 8px 0;
+    margin-left: 64px;
+}
+
+/* 參考效果 連結下方底線左右展開 */
+.navbar-menu a:hover:after {
+    left: 0;
+    right: 0;
+}
+
+.navbar-menu a:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    height: 2px;
+    background-color: #fff;
+    bottom: 0px;
+    transition: .3s;
+}
+
+@media (max-width: 992px) {
+    .navbar {
+        padding: 30px 39px;
+    }
+
+    .navbar-menu a {
+        margin-left: 40px;
+    }
+}
+
+@media(max-width:767px) {
+    .navbar {
+        display: block;
+        padding: 0px;
+    }
+
+    .logo-container {
+        padding: 10px 0;
+    }
+
+    .logo {
+        width: 48px;
+        height: 29px;
+        margin: 0 auto;
+    }
+
+    .logo:hover {
+        transition: 0.8s;
+        transform: translateY(0px);
+    }
+
+    .navbar-menu {
+        justify-content: center;
+    }
+
+    .navbar-menu li {
+        width: 50%;
+        text-align: center;
+        border: 1px solid #fff;
+    }
+
+    .navbar-menu a {
+        margin-left: 0px;
+    }
+}
+
+.banner {
+    height: 840px;
+    background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner.png?raw=true) no-repeat center;
+}
+
+.wrap {
+    max-width: 1110px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+@media (max-width: 992px) {
+    .wrap {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 0 39px;
+    }
+}
+
+@media (max-width: 767px) {
+    .wrap {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+}
+
+.intro {
+    background-color: #AA06010D;
+}
+
+.section-padding {
+    padding-top: 64px;
+    padding-bottom: 80px;
+}
+
+.section-title {
+    font-size: 48px;
+    line-height: 1.5;
+    color: #650300;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 60px;
+}
+
+.intro-items {
+    text-align: center;
+    width: 18.74%;
+    /* cursor: pointer; */
+    /* margin-right: 77px; */
+}
+
+.intro-items p {
+    margin-top: 4px;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.intro-items img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+/* 參考效果 圖片向上旋轉一圈 */
+.intro-items img:hover {
+    transform: rotateY(180deg) translateY(-10px);
+    transition: 0.3s;
+}
+
+.classic-items {
+    margin-bottom: 32px;
+}
+
+.classic-img {
+    width: 635px;
+    margin-right: 30px;
+}
+
+.classic-icon {
+    margin-right: 8px;
+    height: 48px;
+    width: 48px;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.classic-text {
+    text-transform: uppercase;
+    font-family: 'ROBOTO';
+}
+
+.classic-items:nth-child(2) h4 {
+    margin-right: 30px;
+}
+
+.classic-items:nth-child(2) img {
+    margin-right: 0px;
+}
+
+.diamond {
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/13f2e6e6b718b6abafb62ce7a672d42fc39eaeae/week3/icon-diamond.svg);
+}
+
+.sun {
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/13f2e6e6b718b6abafb62ce7a672d42fc39eaeae/week3/icon-sun.svg);
+}
+
+.thunder {
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/13f2e6e6b718b6abafb62ce7a672d42fc39eaeae/week3/icon-thunder.svg);
+}
+
+.design {
+    background: url(https://hexschool.github.io/webLayoutTraining1st/week3/bg.png) no-repeat center;
+}
+
+.design .section-title {
+    color: #FFFFFF;
+}
+
+.design-item {
+    width: 50%;
+    position: relative;
+}
+
+.design-img {
+    width: 100%;
+}
+
+.design-item:first-child {
+    margin-right: 30px;
+}
+
+.design-item:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: .5s;
+}
+
+.design-item:hover:before {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.design-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #AA0601;
+    font-size: 72px;
+    font-family: 'Roboto', sans-serif;
+    white-space: nowrap;
+}
+
+.card .section-title {
+    font-weight: 700;
+}
+
+.card-item {
+    width: 25%;
+    font-family: 'ROBOTO';
+    margin-right: 30px;
+}
+
+/* 參考效果 card浮動並出現陰影 */
+.card-item:hover {
+    transition: 0.7s;
+    transform: translate(-6px, -8px);
+    box-shadow: 15px 15px 10px -5px rgba(0, 0, 0, 0.3);
+}
+
+.card-body {
+    border: 1px solid #DEE2E6;
+    padding: 14px 16px 14px 15px;
+}
+
+.card-group .card-img {
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+.card-img {
+    display: block;
+}
+
+.card-title {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 7px;
+}
+
+.card-text {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.card-time {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #707070;
+}
+
+.contact {
+    background-color: #AA06010D;
+}
+
+.contact .section-title {
+    font-weight: 900;
+    color: #000000;
+    margin-bottom: 24px;
+}
+
+.contact .wrap {
+    width: 730px;
+}
+
+.contact .h6 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.input-group {
+    margin-bottom: 16px;
+}
+
+.form-check {
+    margin-bottom: 42px;
+}
+
+.form-input-control {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    border: 1px solid #000;
+    background-color: transparent;
+    padding: 16px 14px;
+}
+
+.form-checkbox {
+    margin-right: 4px;
+    background-color: transparent;
+}
+
+.submit-btn {
+    font-size: 16px;
+    line-height: 1.4;
+    padding: 16px 143px;
+    background: #AA0601;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.submit-btn:hover {
+    background: rgb(139, 7, 7);
+    transition: 0.5s;
+}
+
+.service {
+    background: #AA0601;
+    padding-top: 36px;
+    padding-bottom: 28.43px;
+}
+
+.service .social {
+    border-bottom: 1px solid #FFFFFF;
+    margin-bottom: 24px;
+}
+
+.footer-nav {
+    margin-bottom: 18px;
+}
+
+.footer-nav a,
+.social-group a {
+    text-decoration: none;
+    color: #FFFFFF;
+    margin-right: 48px;
+}
+
+.footer-nav-icon {
+    margin-left: auto;
+}
+
+.footer-nav-icon li {
+    margin-left: 32px;
+}
+
+.social-group img {
+    margin-right: 12px;
+}
+
+.social-group .mr-17 {
+    margin-right: 17px;
+}
+
+.social-group li {
+    margin-bottom: 19px;
+}
+
+.copyright-logo img {
+    margin-right: 38px;
+}
+
+.copyright-logo p {
+    color: #ffffff;
+}
+
+.copyright-text a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 62px;
+}
+
+footer li:hover {
+    transform: translateY(-4px);
+    transition: 0.3s;
+}
+
+/* footer rwd */
+@media(max-width:992px) {
+    .service {
+        padding: 40px 39px;
+    }
+
+    .footer-nav a {
+        font-size: 16px;
+        line-height: 16px;
+        margin-right: 40px;
+        white-space: nowrap;
+    }
+
+    .social-group img {
+        width: 24px;
+        height: 24px;
+        margin-right: 8px;
+    }
+
+    .social-group .mr-17 {
+        margin-right: 12px;
+    }
+
+    .social-group .h3 {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .footer-nav-icon img {
+        width: 24px;
+        height: 24px;
+        margin-left: 24px;
+    }
+
+    .social-group {
+        margin-bottom: 27px;
+    }
+
+    .copyright-logo a {
+        display: none;
+    }
+
+    .copyright-logo p {
+        font-size: 16px;
+    }
+
+    .copyright-text a {
+        margin-left: 24px;
+        font-size: 14px;
+    }
+}
+
+@media(max-width:767px) {
+    .service {
+        padding: 24px 15px 21px;
+    }
+
+    .social {
+        justify-content: space-between;
+    }
+
+    .footer-nav {
+        display: none;
+    }
+
+    .service .social {
+        margin-bottom: 18px;
+    }
+
+    .social-group {
+        margin-bottom: 24px;
+    }
+
+    .social-group img {
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+    }
+
+    .social-group .mr-17 {
+        margin-right: 4px;
+    }
+
+    .copyright {
+        flex-direction: column;
+    }
+
+    .copyright-logo {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+
+    }
+
+    .copyright-logo a {
+        display: block;
+        width: 46px;
+        height: 27.63px;
+        position: relative;
+    }
+
+    .copyright-logo img {
+        position: absolute;
+        top: 46px;
+    }
+
+    .copyright-logo p {
+        margin-bottom: 7px;
+        white-space: nowrap;
+    }
+
+    .copyright-text {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .copyright-text a {
+        margin-left: 0px;
+        margin-bottom: 8px;
+    }
+
+    .copyright-text a:first-child {
+        margin-bottom: 8px;
+    }
+
+    .social-group .h3 {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    footer li:hover {
+        transform: translateY(0px);
+    }
+}
+
+
+/* faq.html CSS */
+.faq-banner {
+    height: 304px;
+    background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/qa.png?raw=true)no-repeat center center;
+    background-size: cover;
+}
+
+.faq-banner .h1 {
+    line-height: 80px;
+    color: #000;
+}
+
+.faq-banner img {
+    width: 57.9px;
+    height: 57.9px;
+}
+
+.faq-banner h1 {
+    margin-right: 24px;
+}
+
+.faq-container {
+    padding: 80px 0px 304px;
+}
+
+.faq-container .h4 {
+    margin-bottom: 36px;
+}
+
+.question,
+.answer {
+    font-weight: 700;
+    line-height: 23px;
+}
+
+.question {
+    margin-bottom: 16px;
+    color: #000000;
+}
+
+.answer {
+    max-width: 920px;
+    margin: 0 auto 40px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+@media(max-width:992px) {
+    .faq-banner .h1 {
+        font-size: 48px;
+    }
+
+    .faq-banner img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .faq-container {
+        padding: 40px 0px 104px;
+    }
+
+    .faq-container .h4 {
+        font-size: 32px;
+        line-height: 63px;
+    }
+
+    .question {
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    .answer {
+        max-width: 630px;
+    }
+}
+
+@media(max-width:767px) {
+    .faq-banner {
+        height: 143px;
+    }
+
+    .faq-banner h1 {
+        margin-right: 8px;
+    }
+
+    .faq-banner .h1 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    .faq-banner img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .faq-container {
+        padding: 24px 0px 56px;
+    }
+
+    .faq-container .h4 {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+
+    .question {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 8px;
+    }
+
+    .answer {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+}
