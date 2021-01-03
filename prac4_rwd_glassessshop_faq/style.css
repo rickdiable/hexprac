@@ -158,6 +158,8 @@ html {
 }
 
 /* reset end */
+
+
 .ta-right {
     text-align: right;
 }
@@ -263,8 +265,7 @@ h6 {
     font-family: 'Noto Sans TC', sans-serif;
 }
 
-
-/* each settings */
+/* nav */
 
 .navbar {
     background-color: #AA0601;
@@ -361,6 +362,10 @@ h6 {
     }
 }
 
+/* nav end */
+
+/* banner */
+
 .banner {
     height: 840px;
     background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner.png?raw=true) no-repeat center;
@@ -370,11 +375,6 @@ h6 {
     max-width: 1110px;
     margin: 0 auto;
     height: 100%;
-}
-
-.container {
-    max-width: 1110px;
-    margin: 0 auto;
 }
 
 @media (max-width: 992px) {
@@ -411,11 +411,43 @@ h6 {
     margin-bottom: 60px;
 }
 
+@media (max-width: 992px) {
+    .section-padding {
+        padding: 40px 0px;
+    }
+
+    .section-title {
+        font-size: 32px;
+        margin-bottom: 32px;
+    }
+
+    .banner .h3 {
+        font-size: 20px;
+    }
+
+    .banner .h1 {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 767px) {
+    .section-padding {
+        padding: 32px 0px;
+    }
+
+    .section-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+}
+
+/* banner end */
+
+/* intro */
+
 .intro-items {
     text-align: center;
     width: 18.74%;
-    /* cursor: pointer; */
-    /* margin-right: 77px; */
 }
 
 .intro-items p {
@@ -423,6 +455,7 @@ h6 {
     font-size: 16px;
     line-height: 1.5;
     text-align: left;
+    font-weight: 700;
 }
 
 .intro-items img {
@@ -437,6 +470,40 @@ h6 {
     transform: rotateY(180deg) translateY(-10px);
     transition: 0.3s;
 }
+
+@media (max-width: 992px) {
+    .intro ul {
+        flex-wrap: wrap;
+        width: 597px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+
+    .intro-items {
+        width: 237px;
+    }
+
+    .intro-items img {
+        width: 80px;
+        margin-bottom: 18.81px;
+    }
+
+    .intro-items .h5 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .intro ul {
+        flex-direction: column;
+        align-items: center;
+        width: initial;
+    }
+}
+
+/* intro end */
+
+/* classic */
 
 .classic-items {
     margin-bottom: 32px;
@@ -459,6 +526,7 @@ h6 {
 .classic-text {
     text-transform: uppercase;
     font-family: 'ROBOTO';
+    color: #AA0601;
 }
 
 .classic-items:nth-child(2) h4 {
@@ -481,8 +549,79 @@ h6 {
     background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/13f2e6e6b718b6abafb62ce7a672d42fc39eaeae/week3/icon-thunder.svg);
 }
 
+@media (max-width: 992px) {
+    .classic-img {
+        width: 390px;
+    }
+
+    .classic-icon {
+        width: 32px;
+    }
+
+    .classic-text {
+        font-size: 28px;
+    }
+
+    .classic-items:nth-child(2) {
+        flex-direction: row;
+    }
+
+    .classic-items:nth-child(2) h4 {
+        margin-right: 0px;
+    }
+
+    .classic-items:nth-child(2) img {
+        margin-right: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .classic ul {
+        max-width: 345px;
+        width: 100%;
+    }
+
+    .classic-items {
+        position: relative;
+    }
+
+    .classic-img {
+        width: 100%;
+    }
+
+    .classic__item {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0px;
+    }
+
+    .classic__item .h2 {
+        font-size: 28px;
+        color: #fff;
+    }
+
+    .diamond {
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/7059003f6d011be52053cb5e63d68f3999af01d7/week3/icon-diamond-white.svg);
+    }
+
+    .sun {
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/7059003f6d011be52053cb5e63d68f3999af01d7/week3/icon-sun-white.svg);
+    }
+
+    .thunder {
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/7059003f6d011be52053cb5e63d68f3999af01d7/week3/icon-thunder-white.svg);
+    }
+}
+}
+
+/* classic end */
+
+/* design */
+
 .design {
-    background: url(https://hexschool.github.io/webLayoutTraining1st/week3/bg.png) no-repeat center;
+    background: url(https://hexschool.github.io/webLayoutTraining1st/week3/bg.png) center center/cover;
 }
 
 .design .section-title {
@@ -527,6 +666,41 @@ h6 {
     font-family: 'Roboto', sans-serif;
     white-space: nowrap;
 }
+
+@media (max-width: 992px) {
+    .design-item {
+        width: 330px;
+    }
+
+    .design .section-title {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 767px) {
+    .design ul {
+        flex-direction: column;
+    }
+
+    .design .section-title {
+        max-width: 345px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .design-item:first-child {
+        margin-right: auto;
+        margin-bottom: 16px;
+    }
+
+    .design-list img {
+        width: 100%;
+    }
+}
+
+/* design end */
+
+/* card */
 
 .card .section-title {
     font-weight: 700;
@@ -576,6 +750,33 @@ h6 {
     line-height: 1.5;
     color: #707070;
 }
+
+@media (max-width: 992px) {
+    .card-group {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .card-item {
+        width: 330px;
+    }
+}
+
+@media (max-width: 767px) {
+    .card-group {
+        flex-direction: column;
+    }
+
+    .card-item {
+        max-width: 345px;
+        width: 100%;
+        margin: auto;
+    }
+}
+
+/* card end */
+
+/* contact */
 
 .contact {
     background-color: #AA06010D;
@@ -641,6 +842,46 @@ label {
     background: rgb(139, 7, 7);
     transition: 0.5s;
 }
+
+@media (max-width: 992px) {
+    .form {
+        width: 450px;
+    }
+
+    .form .h6 {
+        margin-bottom: 12px;
+    }
+
+    .input-group {
+        margin-bottom: 8px;
+    }
+
+    .submit-btn {
+        width: 200px;
+        padding: 8px 0;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .form {
+        max-width: 345px;
+        width: 100%;
+    }
+
+    .form .h6 {
+        margin-bottom: 8px;
+    }
+
+    .submit-btn {
+        width: 165px;
+        margin-top: 24px;
+    }
+}
+
+/* contact end */
+
+/* footer */
 
 .service {
     background: #AA0601;
@@ -837,6 +1078,7 @@ footer li:hover {
     }
 }
 
+/* footer end */
 
 /* faq.html CSS */
 .faq-banner {
