@@ -846,6 +846,7 @@ label {
 @media (max-width: 992px) {
     .form {
         width: 450px;
+        margin: 0 auto;
     }
 
     .form .h6 {
@@ -1097,6 +1098,12 @@ footer li:hover {
     height: 57.9px;
 }
 
+.icon-help {
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
 .faq-banner h1 {
     margin-right: 24px;
 }
@@ -1137,6 +1144,10 @@ footer li:hover {
         height: 48px;
     }
 
+    .icon-help {
+        height: 72px;
+    }
+
     .faq-container {
         padding: 40px 0px 104px;
     }
@@ -1173,6 +1184,11 @@ footer li:hover {
     .faq-banner img {
         width: 24px;
         height: 24px;
+    }
+
+    .icon-help {
+        height: 30px;
+        display: block;
     }
 
     .faq-container {
